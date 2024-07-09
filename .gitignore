@@ -1,0 +1,9 @@
+# Ignore Python virtual environments
+Virtual_TryOn/venv/
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+
+# Ignore the Shirts directory
+Virtual_TryOn/Resources/Shirts/
