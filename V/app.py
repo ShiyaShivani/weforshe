@@ -3,6 +3,8 @@ import mediapipe as mp
 import numpy as np
 import time
 from utils import overlay_clothing, load_clothing_images
+from flask import Flask, render_template, url_for, request
+import threading
 
 # Initialize MediaPipe Pose model
 mp_pose = mp.solutions.pose
@@ -13,6 +15,28 @@ clothing_images = load_clothing_images('clothing/')
 current_clothing_index = 0
 last_change_time = time.time()  # Track the last time the clothing was changed
 
+
+app = Flask(__name__)
+
+@app.route('/')
+
+@app.route('/home')
+def home():
+    return render_template("Index.html")
+
+@app.route('/main',methods=['POST'])
+
+def run():
+    # output = request.form.to_dict()
+    # print(output)
+    # name = output["name"]
+    # main()
+    thread = threading.Thread(target=main)
+    thread.start()
+    # return render_template("Index.html",name = name)
+    return "File running"
+
+    
 def main():
     global current_clothing_index, last_change_time
     
@@ -67,4 +91,5 @@ def main():
     cv2.destroyAllWindows()
 
 if __name__ == '__main__':
-    main()
+    # main()
+    app.run(debug=True, use_reloader=False)
