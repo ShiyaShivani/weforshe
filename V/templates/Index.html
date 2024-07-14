@@ -3,13 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
 </head>
-<body>
-    <h1>HELLO WELCOME TO MYNTRA STUDIO</h1>
-    <form action="/main" method="POST">
+<body class="grid gap-4 bg-white grid-rows-2">
+    <div class="navbar bg-white shadow-lg bg-base-100">
+        <div class="flex-1">
+          
+          <img class="w-10" alt="logo" src="https://cdn.iconscout.com/icon/free/png-256/free-myntra-2709168-2249158.png?f=webp&w=256"/>
+          <a class="btn btn-ghost text-xl">Myntra's <p class="text-black font-bold">STUDIO</p></a>
+        </div>
+        <div class="flex-none">
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+              <div class="indicator">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <span class="badge badge-sm indicator-item">8</span>
+              </div>
+            </div>
+            <div
+              tabindex="0"
+              class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+              <div class="card-body">
+                <span class="text-lg font-bold">8 Items</span>
+                <span class="text-info">Subtotal: $999</span>
+                <div class="card-actions">
+                  <button class="btn btn-primary btn-block">View cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img
+                  alt="Tailwind CSS Navbar component"
+                  src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+              </div>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    <h1 class="justify-center  content-center font-sans text-xl pt-4 text-black font-bold flex ">Guide to influencers' Most  Coveted Looks!</h1>
+    <div class="flex justify-center bg-[#fdeeee] pb-[80vh] place-items-center ">
+        <div class="artboard flex artboard-horizontal phone-4">
+            <div class="flex bg-orange-500 flex-col gap-4">
+             
+                     <!-- INFLUENCER POST START -->
+                        <div>
+                          <img
+                            src="https://i.ytimg.com/vi/Z7GpnwC2Ul0/maxresdefault.jpg"
+                            alt="Shoes" class=" justify-center content-center place-items-center" />
+                        </div>
+                    
+                    <!-- INFLUENCER POST END -->
+                
+                <div class="card bg-base-300 bg-pink-400 rounded-box grid h-10 place-items-center">
+                    <!-- Carosels Start-->
+                    <div class="carousel rounded-box h-[50vh]">
+                        <div class="carousel-item bg-white">
+                          <img
+                            src="https://i.postimg.cc/8cMWt1Qp/dress7.png"
+                            alt="Burger"  />
+                        </div>
+                        <div class="carousel-item bg-white">
+                          <img
+                            src="https://i.postimg.cc/5tKwt7SV/dress6.png"
+                            alt="Burger" />
+                        </div>
+                        <div class="carousel-item bg-white">
+                          <img
+                            src="https://i.postimg.cc/zG5w2RG9/dress5.png"
+                            alt="Burger" />
+                        </div>
+                        <div class="carousel-item bg-white">
+                          <img
+                            src="https://i.postimg.cc/R0gTHV92/dress4.png"
+                            alt="Burger" />
+                        </div>
+                        <div class="carousel-item bg-white">
+                          <img
+                            src="https://i.postimg.cc/13cByrdm/dress3.png"
+                            alt="Burger" />
+                        </div>
+                        <div class="carousel-item bg-white">
+                          <img
+                            src="https://i.postimg.cc/F1XKCNrZ/dress2.png"
+                            alt="Burger" />
+                        </div>
+                        <div class="carousel-item bg-white">
+                          <img
+                            src="https://i.postimg.cc/gkhXVBzs/dress1.png"
+                            />
+                        </div>
+                      </div>
     
-        <button type="submit">CLICK</button>
-    </form>
+                   <!-- Carosels end -->
+    
+                   <!-- Tryon button start -->
+                  
+                    <form class="p-2" action="/main" method="POST">
+                        <button class="btn btn-primary font-bold text-white" type="submit">Try On</button>
+                    </form>
+                      <!-- Tryon button end -->
+                </div>
+              </div>
+        </div>
+    </div>
+    
+
 </body>
 </html>

@@ -33,8 +33,8 @@ def run():
     # main()
     thread = threading.Thread(target=main)
     thread.start()
-    # return render_template("Index.html",name = name)
-    return "File running"
+    # return render_template("Index.html")
+    return "<h1>TRY ON RUNNING!!</h1>"
 
     
 def main():
